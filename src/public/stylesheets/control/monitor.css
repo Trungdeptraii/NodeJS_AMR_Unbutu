@@ -1,0 +1,140 @@
+.move{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.arrow-field{
+    flex-grow: 1;
+}
+.arrow, .arrow-stop{
+    /* height: 100%; */
+    display: inline-flex;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    border-radius: 10px;
+}
+.arrow-stop{
+    color: #635d5a;
+}
+.arrow{
+    background-color: #ebf1f1;
+    border: 2px solid #d2d6d9;
+    height: 100%;
+    width: 30%;
+    color: #898888;
+}
+.arrow-field{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.arrow-field-top, .arrow-field-bottom{
+    justify-content: center;
+    align-items: center;
+}
+
+/*Setting*/
+.setting-monitor{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    /* position: absolute;
+    right: 50px;
+    top: 10px; */
+    gap: 5;
+    align-items: center;
+    font-weight: 600;
+    color: #437af3;
+}
+.overlay.active{
+    position: absolute;
+    display: flex;
+    inset: 0;
+    background-color: rgb(103 96 88 / 60%);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: unset;
+    height: unset;
+}
+.overlay{
+    display: none;
+}
+.overlay-content{
+    background-color: #bdbec2;
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*Table Monitor*/
+.table-monitor{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius:  10px 10px 0 0;
+    box-shadow: 0 0 1px 1px bisque;
+}
+.table-title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    padding-left: 5px;
+    background-color: #dad5d5;
+    border-radius: 10px 10px 0 0;
+}
+.monitor-menu{
+    padding-left: 10px;
+    background-color: white;
+}
+.monitor-menu li{
+    list-style: none;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid gainsboro;
+    padding: 0 10px;
+}
+@media (max-width: 576px) {
+    .overlay-content{
+        width: 80%;
+    }
+    .table-monitor{
+        max-width: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .arrow, .arrow-stop{
+        font-size: 120px;
+    }
+    .arrow-field{
+        flex-grow: unset;
+    }
+    .bxl-audible{
+        display: none;
+    }
+    .logo_name{
+        padding-left: 14px;
+    }
+    .overlay-content{
+        width: 80%;
+        top: 20%;
+        height: 300px;
+        margin-top: 50px
+    }
+    .overlay.active{
+        align-items: unset;
+    }
+}
+@media (max-width: 1200px) {
+    .table-monitor{
+        display: block;
+        position: unset;
+        margin: 10px auto 15px auto;
+    }
+}
+

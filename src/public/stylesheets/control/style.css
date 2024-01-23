@@ -1,0 +1,73 @@
+/*Table Monitor*/
+/*Table Monitor*/
+.table-monitor{
+    border-radius:  10px 10px 0 0;
+    box-shadow: 0 0 1px 1px bisque;
+}
+.table-title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    padding-left: 5px;
+    background-color: #dad5d5;
+    border-radius: 10px 10px 0 0;
+}
+.monitor-menu{
+    padding-left: 10px;
+    background-color: white;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+.monitor-menu li{
+    list-style: none;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 10px;
+}
+ul li{
+    list-style: none;
+}
+pre{
+    margin-bottom: 5px;
+}
+/*Overlay Relocation*/
+.overlay_show_add_relocation{
+    display: none;
+    position: fixed;
+    background-color: beige;
+    left: -15%;
+    inset: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_show_add_relocation.active{
+    display: flex;
+}
+.overlay_show{
+    background-color: aqua;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.overlay_show .title{
+    text-align: center;
+    font-size: 28px;
+}
+.over_lay_show_conte{
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .table-monitor{
+        max-width: 350px;
+    }
+}
+@media (max-width: 1900px) {
+    .over_lay_show_content .col-xl-6{
+        width: unset;
+    }
+}
+

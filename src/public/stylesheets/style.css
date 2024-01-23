@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Unbutu', sans-serif !important;
+}
+label{
+  margin: 0 !important;
+  padding:  0 !important;
+}
+.btn{
+  font-weight: 600 !important;
+}

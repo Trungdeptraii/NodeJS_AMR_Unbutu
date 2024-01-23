@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="/stylesheets/control/style.css">
+<link rel="stylesheet" href="/toastify-js/src/toastify.css">
+<div class="control d-flex">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <select name="type_control" class="form-control fw-bold mt-3 type_control">
+                    <option value="null">Chọn API</option>
+                    <option value="robot_control_loadmap_req" selected>1.Chuyển map</option>
+                    <option value="robot_control_reloc_req">2.Lấy lại vị trí</option>
+                    <option value="robot_control_comfirmloc_req">3.Xác nhận vị trí</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-content">
+            <div class="row gy-2 mt-3">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6">
+                    
+                    <div class="photo d-flex align-items-center">
+                        <img src="/images/robot_control_loadmap_req.PNG" alt="" style="object-fit: contain; width: 100%;">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6 py-2">
+                    <form action="#" class="form_map_name">
+                        <div>
+                            <div class="mb-1">Tên map</div>
+                            <div class="d-flex gap-3 mb-2">
+                                <label for="exampleFormControlInput1" class="form-label flex-grow-1">
+                                    <input type="text" name="map_name" class="form-control map_name_input" id="exampleFormControlInput1" placeholder="Nhập tên map">
+                                </label>
+                                <button class="btn btn-warning btn_clear_map_name" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Gửi API</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="row gy-2 mt-3">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6">
+                    <span class="mb-1 "><b>2. Lấy lại vị trí</b></span>
+                    <div class="photo d-flex align-items-center">
+                        <img src="/images/robot_control_reloc_req.PNG" alt="" style="object-fit: contain; width: 100%;">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6 py-2">
+                    <form action="#" class="form_relocation">
+                        <div>
+                            <div class="mb-1"><b>Tọa độ trục x</b></div>
+                            <div class="d-flex gap-3">
+                                <label class="form-label flex-grow-1">
+                                    <input type="text" name="x" class="form-control relocation_x" id="exampleFormControlInput1" placeholder="Nhập tọa độ trục x">
+                                </label>
+                                <button type="button" class="btn btn-warning btn_remove_relocation_x">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <div class="mb-1"><b>Tọa độ trục y</b></div>
+                            <div class="d-flex gap-3">
+                                <label class="form-label flex-grow-1">
+                                    <input type="text" name="y" class="form-control relocation_y" id="exampleFormControlInput1" placeholder="Nhập tọa độ trục y">
+                                </label>
+                                <button type="button" class="btn btn-warning btn_remove_relocation_y">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <div class="mb-1"><b>Góc quay</b></div>
+                            <div class="d-flex gap-3">
+                                <label class="form-label flex-grow-1">
+                                    <input type="text" name="angle" class="form-control relocation_angle" id="exampleFormControlInput1" placeholder="Nhập tọa độ góc">
+                                </label>
+                                <button type="button" class="btn btn-warning btn_remove_relocation_angle">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <div class="mb-1"><b>Bán kính Relocation - m</b></div>
+                            <div class="d-flex gap-3">
+                                <label class="form-label flex-grow-1">
+                                    <input type="text" name="length" class="form-control relocation_length" id="exampleFormControlInput1" placeholder="Nhập bán kính relocation">
+                                </label>
+                                <button type="button" class="btn btn-warning btn_remove_relocation_length">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <div class="mb-1"><b>Điểm home</b></div>
+                            <div class="d-flex gap-3">
+                                <label class="form-label flex-grow-1">
+                                    <input type="text" name="home" class="form-control relocation_home" id="exampleFormControlInput1" placeholder="Nhập điểm home">
+                                </label>
+                                <button type="button" class="btn btn-warning btn_remove_relocation_home">Xóa</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Xác thực</button>
+                    </form>
+                </div>
+            </div> -->
+            <!-- <div class="row gy-2 mt-3 list_point_relocation">
+                <div class="col-12">
+                    <span class="name-item" ><b>Vị trí số 1</b></span>
+                    <div class="list-btn-relocation">
+                        <button class="btn btn-primary btn_view_ponit_relocation">Xem thông tin</button>
+                        <button class="btn btn-success btn_send_ponit_relocation" data-relocation="1">Relocation</button>
+                        <button class="btn btn-primary btn_edit_ponit_relocation">Sửa</button>
+                        <button class="btn btn-danger btn_delete_ponit_relocation">Xóa</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="control-result mt-3">
+            <h5>Kết quả:</h5>
+            <pre class="result_api">
+            </pre>
+        </div>
+        
+    </div>
+</div>
+<script src="/toastify-js/src/toastify.js"></script>
+<script type="module" src="/javascripts/control/index.js"></script>

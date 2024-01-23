@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/disablecopy.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/toastify-js/src/toastify.css">
+    <link rel="stylesheet" href="/stylesheets/all.min.css">
+    <title>Document</title>">
+</head> -->
+  <div class="container">
+    <div class="test">
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+    <div id="keyboardEventListener" tabindex="0"></div>
+    <div class="connect my-1"></div>
+    <div class="battery"></div>
+    <div class="charing"></div>
+    <div class="confidence my-1"></div>
+    <div class="speed_current my-1">0</div>
+    <div class="current_station my-1"></div>
+    <div class="status_amr my-1"></div>
+    <div class="blocked my-1"></div>
+    <div class="emergency my-1"></div>
+    <form action="">
+      <input type="number" name="point" placeholder="Nhập điểm..." class="point">
+      <button class="btn btn-primary px-2" type="button" onclick="fnNavigation()">Chạy</button>
+    </form>
+   <div class="">
+    <div class="my-2 w-30">
+      <button onmousedown="fnTien()" onmouseup="fnMoveStop()" ontouchstart="fnTien()" ontouchend="fnMoveStop()"class="btn btn-primary">Tiến</button>
+    </div>
+    <div class="my-2">
+      <button onmousedown="fnLui()" onmouseup="fnMoveStop()" ontouchstart="fnLui()" ontouchend="fnMoveStop()"  class="btn btn-primary">Lùi</button>
+    </div>
+    <button onmousedown="fnTrai()" onmouseup="fnMoveStop()" ontouchstart="fnTrai()" ontouchend="fnMoveStop()" class="btn btn-primary">Trái</button>
+    <button onmousedown="fnPhai()" onmouseup="fnMoveStop()" ontouchstart="fnPhai()" ontouchend="fnMoveStop()" class="btn btn-primary">Phải</button>
+   </div>
+   <div class="mt-2">
+    <button onclick="fnPause()"  class="btn btn-warning">Pause</button>
+    <button onclick="fnResume()" class="btn btn-success">Resume</button>
+    <button onclick="fnCancel()" class="btn btn-danger">Cancel</button>
+   </div>
+  </div>
+<script type="module" src="/javascripts/status.js"></script>

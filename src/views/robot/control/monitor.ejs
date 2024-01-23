@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="/stylesheets/control/monitor.css">
+<link rel="stylesheet" href="/stylesheets/disablecopy.css">
+<link rel="stylesheet" href="/toastify-js/src/toastify.css">
+
+
+<div class="align-items-center position-relative"">
+    <div class="container ">
+        <div class="table-monitor">
+            <div class="table-title">
+                <b>Trạng thái AMR</b>
+            </div>
+            <ul class="monitor-menu">
+                <li>
+                    <span class="mr-1">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    <span>Tốc độ chạy set:</span>
+                    <span class="monitor-speed-set mx-1"></span>
+                    <span> m/s</span>
+                </li>
+                <li>
+                    <span class="mr-1">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    <span>Tốc độ quay set:</span>
+                    <span class="monitor-angle-set mx-1"></span>
+                    <span> °/s</span>
+                </li>
+                <li>
+                    <span class="mr-1">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </span>
+                    <span>Pin: </span>
+                    <span class="monitor-battery mx-1"></span>
+                    <span>%</span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </span>
+                    <span>Độ chính xác: </span>
+                    <span class="monitor-confidence mx-1"></span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-gauge-simple"></i>
+                    </span>
+                    <span>Tốc độ thực: </span>
+                    <span class="monitor-speed mx-1"></span>
+                    <span>m/s</span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </span>
+                    <span>Vật cản: </span>
+                    <span class="monitor-blocked mx-1"></span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </span>
+                    <span>Loại di chuyển: </span>
+                    <span class="monitor-blocked mx-1"></span>
+                    <span class="typeMonitorText"></span>
+                    <label for="typeMonitor">
+                        <input type="checkbox" class="typeMonitor" id="typeMonitor" hidden>
+                        <div class="btn btn-primary my-1">Thay đổi</div>
+                    </label>
+                </li>
+                <li>
+                    <span class="setting-monitor">
+                        <span class="icon-setting">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <span class="mx-1">Setting</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="move">
+            <div class="arrow-field arrow-field-top">
+                <span class="arrow arrow-top">
+                    <i class="fa-solid fa-caret-up"></i>
+                </span>
+            </div>
+            <div class="arrow-field my-3">
+                <span class="arrow arrow-left">
+                    <i class="fa-solid fa-caret-left"></i>
+                </span>
+                <span class="arrow-stop">
+                    <i class="fa-solid fa-stop"></i>
+                </span>
+                <span class="arrow arrow-right">
+                    <i class="fa-solid fa-caret-right" ></i>
+                </span>
+            </div>
+            <div class="arrow-field arrow-field-bottom">
+                <span class="arrow arrow-bottom" >
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay">
+        <div class="overlay-content">
+            <form action="" class="form-monitor">
+                <h4 class="text-center">Cài thông số chạy</h4>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Tốc độ chạy - < 1m/s</b></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nhập tốc độ chạy..." value="0.2">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Tốc độ quay - m/s</b></label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Nhập tốc độ quay..." value="10">
+                </div>
+                <div class="d-flex justify-content-end gx-2">
+                    <button type="submit" class="btn btn-primary monitor-save">Lưu</button>
+                    <button class="btn btn-warning mx-2 monitor-exit">Thoát</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/toastify-js/src/toastify.js"></script>
+<script type="module" src="/javascripts/control/monitor.js"></script>
